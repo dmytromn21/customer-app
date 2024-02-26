@@ -6,7 +6,7 @@ axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 
 const API = {
     getApiToken: (): Promise<AxiosResponse> => {
-        return new Promise((resolve, reject) => {
+        return new Promise((reject) => {
             axios.post('/GetToken', {
                 username: 'api.Fuse2@p-rd.com',
                 grant_type: 'password',
